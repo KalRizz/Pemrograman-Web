@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile - @kalrizzz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-300 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold">𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 </a>
+                
+                <!-- Search Bar (Hidden on mobile) -->
+                <div class="hidden md:block">
+                    <input type="text" placeholder="Search" 
+                           class="px-4 py-2 bg-gray-100 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                
+                <!-- Nav Icons -->
+                <div class="flex items-center gap-4 md:gap-6">
+                    <a href="#" class="text-2xl hover:text-gray-600"><i class="bi bi-house-door-fill"></i></a>
+                    <a href="#" class="text-2xl hover:text-gray-600"><i class="bi bi-send"></i></a>
+                    <a href="#" class="text-2xl hover:text-gray-600 hidden sm:block"><i class="bi bi-plus-square"></i></a>
+                    <a href="#" class="text-2xl hover:text-gray-600 hidden sm:block"><i class="bi bi-compass"></i></a>
+                    <a href="#" class="text-2xl hover:text-gray-600 hidden md:block"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-2xl hover:text-gray-600"><i class="bi bi-person-circle"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header Section -->
+    <section class="bg-white border-b border-gray-300 py-8 md:py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Mobile Layout -->
+            <div class="flex flex-col md:hidden">
+                <!-- Profile Picture & Username (Mobile) -->
+                <div class="flex items-center justify-between mb-6">
+                    <img src="asset/gambar2.jpeg" 
+                         alt="Profile" 
+                         class="w-20 h-20 rounded-full border-2 border-gray-300 object-cover">
+                    <div class="flex-1 ml-6">
+                        <h2 class="text-xl font-semibold">kalrizzz</h2>
+                    </div>
+                </div>
+                
+                <!-- Stats (Mobile) -->
+                <div class="flex justify-around py-4 border-t border-b border-gray-300 mb-4">
+                    <div class="text-center">
+                        <div class="font-semibold text-lg">12</div>
+                        <div class="text-gray-500 text-sm">Posts</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-semibold text-lg">182</div>
+                        <div class="text-gray-500 text-sm">Followers</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-semibold text-lg">22</div>
+                        <div class="text-gray-500 text-sm">Following</div>
+                    </div>
+                </div>
+                
+                <!-- Bio (Mobile) -->
+                <div class="mb-4">
+                    <div class="font-semibold">Haekal Rizqi</div>
+                    <div class="text-sm">Mahasiswa</div>
+                    <div class="text-sm">Samarinda</div>
+                    <a href="#" class="text-sm text-blue-600">www.kalrizz.com</a>
+                </div>
+                
+                <!-- Buttons (Mobile) -->
+                <div class="grid grid-cols-3 gap-2">
+                    <button class="bg-blue-500 text-white px-4 py-1.5 rounded-lg font-semibold hover:bg-blue-600">
+                        Follow
+                    </button>
+                    <button class="bg-gray-200 px-4 py-1.5 rounded-lg font-semibold hover:bg-gray-300">
+                        Message
+                    </button>
+                    <button class="bg-gray-200 px-4 py-1.5 rounded-lg font-semibold hover:bg-gray-300">
+                        <i class="bi bi-person-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Desktop/Tablet Layout -->
+            <div class="hidden md:grid md:grid-cols-12 md:gap-8 lg:gap-16">
+                <!-- Profile Picture (Desktop) - Order 1 -->
+                <div class="md:col-span-4 lg:col-span-3 md:order-1 flex justify-center items-start">
+                    <img src="asset/gambar2.jpeg" 
+                         alt="Profile" 
+                         class="w-36 h-36 lg:w-44 lg:h-44 rounded-full border-2 border-gray-300 object-cover">
+                </div>
+                
+                <!-- Profile Info (Desktop) - Order 2 -->
+                <div class="md:col-span-8 lg:col-span-9 md:order-2">
+                    <!-- Username & Buttons Row -->
+                    <div class="flex items-center gap-4 mb-6">
+                        <h2 class="text-2xl lg:text-3xl font-light">kalrizzz</h2>
+                        <button class="bg-blue-500 text-white px-6 py-1.5 rounded-lg font-semibold text-sm hover:bg-blue-600">
+                            Follow
+                        </button>
+                        <button class="bg-gray-200 px-6 py-1.5 rounded-lg font-semibold text-sm hover:bg-gray-300">
+                            Message
+                        </button>
+                        <button class="bg-gray-200 px-3 py-1.5 rounded-lg font-semibold text-sm hover:bg-gray-300">
+                            <i class="bi bi-person-plus"></i>
+                        </button>
+                        <button class="ml-auto text-xl hover:text-gray-600">
+                            <i class="bi bi-gear"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Stats Row (Desktop) -->
+                    <div class="flex gap-8 mb-6">
+                        <div>
+                            <span class="font-semibold">12</span> posts
+                        </div>
+                        <div>
+                            <span class="font-semibold">182</span> followers
+                        </div>
+                        <div>
+                            <span class="font-semibold">22</span> following
+                        </div>
+                    </div>
+                    
+                    <!-- Bio (Desktop) -->
+                    <div>
+                        <div class="font-semibold">Haekal Rizqi</div>
+                        <div>Mahasiswa</div>
+                        <div>Samarinda</div>
+                        <a href="#" class="text-blue-900">www.kalrizz.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Highlights -->
+    <section class="bg-white border-b border-gray-300 py-4">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex gap-4 md:gap-8 overflow-x-auto">
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-gray-300 p-0.5 mb-1">
+                        <img src="asset/gambar14.jpeg" 
+                             alt="Story" 
+                             class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs">Me</span>
+                </div>
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-gray-300 p-0.5 mb-1">
+                        <img src="asset/gambar15.jpeg" 
+                             alt="Story" 
+                             class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs">Friends</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feed Tabs -->
+    <section class="bg-white border-b border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-center gap-8 md:gap-16">
+                <button class="py-4 border-t-2 border-black font-semibold text-xs tracking-wide flex items-center gap-2">
+                    <i class="bi bi-grid-3x3"></i> <span class="hidden sm:inline">POSTS</span>
+                </button>
+                <button class="py-4 border-t-2 border-transparent text-gray-400 font-semibold text-xs tracking-wide flex items-center gap-2 hover:text-gray-600">
+                    <i class="bi bi-play-square"></i> <span class="hidden sm:inline">REELS</span>
+                </button>
+                <button class="py-4 border-t-2 border-transparent text-gray-400 font-semibold text-xs tracking-wide flex items-center gap-2 hover:text-gray-600">
+                    <i class="bi bi-bookmark"></i> <span class="hidden sm:inline">SAVED</span>
+                </button>
+                <button class="py-4 border-t-2 border-transparent text-gray-400 font-semibold text-xs tracking-wide flex items-center gap-2 hover:text-gray-600 hidden sm:flex">
+                    <i class="bi bi-person-square"></i> TAGGED
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feed Grid - FITUR UTAMA: Responsive Grid + Order -->
+    <section class="py-6 max-w-6xl mx-auto px-1 md:px-4">
+        <!-- Mobile: 3 columns, MD: 3 columns, LG: 4 columns -->
+        <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-2">
+            
+            <!-- Post 1 -->
+            <div class="col-span-1 order-1 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar1.jpeg" 
+                     alt="Post 1" 
+                     class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 12k</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 2 -->
+            <div class="col-span-1 order-2 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar3.jpeg" 
+                     alt="Post 2" 
+                     class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 8</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 3 -->
+            <div class="col-span-1 order-3 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar4.jpeg" 
+                     alt="Post 3" 
+                     class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 2</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 1</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 4 - Spans 2 rows on desktop -->
+            <div class="col-span-1 order-3 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar5.jpeg" 
+                     alt="Post 3" 
+                     class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 2</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 5 -->
+            <div class="col-span-1 order-5 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar6.jpeg" 
+                     alt="Post 5" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 4</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 6 -->
+            <div class="col-span-1 order-6 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar7.jpeg" 
+                     alt="Post 6" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 10</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 2</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 7 - Order changes on MD -->
+            <div class="col-span-1 order-8 md:order-7 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar8.jpeg" 
+                     alt="Post 7" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 5</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 1</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 8 - Order changes on MD -->
+            <div class="col-span-1 order-7 md:order-8 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar9.jpeg" 
+                     alt="Post 8" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 5</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 9 -->
+            <div class="col-span-1 order-9 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar10.jpeg" 
+                     alt="Post 9" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 10</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 2</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 10 -->
+            <div class="col-span-1 order-10 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar11.jpeg" 
+                     alt="Post 10" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 7</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 3</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 11 -->
+            <div class="col-span-1 order-11 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar12.jpeg" 
+                     alt="Post 11" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 4</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Post 12 -->
+            <div class="col-span-1 order-12 relative group aspect-square overflow-hidden">
+                <img src="asset/gambar13.jpeg" 
+                     alt="Post 12" 
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <div class="text-white flex gap-4">
+                        <span class="flex items-center gap-1"><i class="bi bi-heart-fill"></i> 4</span>
+                        <span class="flex items-center gap-1"><i class="bi bi-chat-fill"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Load More Button -->
+        <div class="mt-8 flex justify-center">
+            <button onclick="loadMore(this)" 
+                    class="px-8 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 font-semibold text-sm transition-colors">
+                Load More
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-300 mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-gray-500 mb-4">
+                <a href="#" class="hover:underline">About</a>
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Jobs</a>
+                <a href="#" class="hover:underline">Help</a>
+                <a href="#" class="hover:underline">API</a>
+                <a href="#" class="hover:underline">Privacy</a>
+                <a href="#" class="hover:underline">Terms</a>
+                <a href="#" class="hover:underline">Locations</a>
+            </div>
+            <div class="text-center text-xs text-gray-500">
+                © 2025 Instagram Clone - Built with Tailwind CSS
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Follow button toggle
+        const followBtns = document.querySelectorAll('button');
+        followBtns.forEach(btn => {
+            if (btn.textContent.trim() === 'Follow') {
+                btn.addEventListener('click', function() {
+                    if (this.textContent.trim() === 'Follow') {
+                        this.textContent = 'Following';
+                        this.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                        this.classList.add('bg-gray-200', 'hover:bg-gray-300', 'text-black');
+                    } else {
+                        this.textContent = 'Follow';
+                        this.classList.remove('bg-gray-200', 'hover:bg-gray-300', 'text-black');
+                        this.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white');
+                    }
+                });
+            }
+        });
+
+        // Load more function
+        function loadMore(btn) {
+            btn.innerHTML = '<span class="inline-block animate-spin mr-2">⏳</span>Loading...';
+            setTimeout(() => {
+                alert('More posts would be loaded here!');
+                btn.innerHTML = 'Load More';
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

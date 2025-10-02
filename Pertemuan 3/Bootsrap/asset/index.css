@@ -1,0 +1,251 @@
+
+/* Custom CSS untuk Instagram Profile */
+:root {
+    --ig-border: #dbdbdb;
+    --ig-gray: #8e8e8e;
+    --ig-blue: #0095f6;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid var(--ig-border);
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Profile Header */
+.profile-header {
+    padding: 30px 0;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--ig-border);
+    object-fit: cover;
+}
+
+/* Mobile profile pic size */
+@media (max-width: 576px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Stats Section */
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.stat-label {
+    color: var(--ig-gray);
+    font-size: 0.9rem;
+}
+
+/* Bio Section */
+.profile-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-bio {
+    line-height: 1.5;
+    color: #262626;
+}
+
+/* Buttons */
+.btn-ig-primary {
+    background-color: var(--ig-blue);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-ig-primary:hover {
+    background-color: #0074cc;
+    color: white;
+}
+
+.btn-ig-secondary {
+    background-color: #efefef;
+    color: black;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Story Highlights */
+.story-highlight {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.story-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--ig-border);
+    padding: 3px;
+    background: white;
+    margin: 0 auto 5px;
+    overflow: hidden;
+}
+
+.story-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.story-label {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Feed Tabs */
+.feed-tabs {
+    border-top: 1px solid var(--ig-border);
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.nav-tabs {
+    border: none;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: var(--ig-gray);
+    padding: 15px 30px;
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+}
+
+.nav-tabs .nav-link.active {
+    color: black;
+    border-top: 1px solid black;
+    background: transparent;
+}
+
+/* Feed Grid */
+.feed-grid {
+    margin-top: 20px;
+}
+
+.feed-item {
+    position: relative;
+    padding-bottom: 100%; /* 1:1 Aspect Ratio */
+    background: #f0f0f0;
+    overflow: hidden;
+    border: 1px solid var(--ig-border);
+}
+
+.feed-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.feed-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay untuk hover effect */
+.feed-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feed-item:hover .feed-overlay {
+    opacity: 1;
+}
+
+.feed-stats {
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.feed-stats span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    border-top: 1px solid var(--ig-border);
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .profile-stats {
+        border-top: 1px solid var(--ig-border);
+        border-bottom: 1px solid var(--ig-border);
+        padding: 15px 0;
+        margin-top: 15px;
+    }
+}
+
+/* Grid gap adjustments */
+.g-1 {
+    --bs-gutter-x: 0.25rem;
+    --bs-gutter-y: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .g-md-2 {
+        --bs-gutter-x: 0.5rem;
+        --bs-gutter-y: 0.5rem;
+    }
+}
