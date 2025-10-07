@@ -1,0 +1,18 @@
+body{
+    background:url(https://asset.kompas.com/crops/NBrQ-9IbQAAOyEJDt53X_dt-a5Y=/32x0:1000x645/1200x800/data/photo/2020/11/23/5fbb4d388d220.jpg) no-repeat;
+    font-family: Georgia;
+}
+h1{
+    background-color: purple;
+    text-align: center;
+    color: white;
+}
+h2{
+    color: red;
+    font-size: 25px;
+}
+p{
+    margin-left: 50px;
+    color: rgb(255, 251, 9);
+    font-size: 24px;
+}
