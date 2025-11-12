@@ -1,0 +1,201 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.calendar-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.current-date {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.result-box {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.result-box h3 {
+    margin-top: 0;
+    color: #667eea;
+    font-size: 20px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-item:last-of-type {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+.value {
+    color: #333;
+    font-weight: 600;
+}
+
+.badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.badge.kabisat {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.badge.normal {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #ddd;
+    margin: 20px 0;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.highlight-text {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    opacity: 0.95;
+}
+
+.days-count {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.note {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.note p {
+    margin: 5px 0;
+    color: #856404;
+}
+
+.info-additional {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-additional h4 {
+    margin-top: 0;
+    color: #667eea;
+    font-size: 18px;
+}
+
+.month-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.month-table th {
+    background-color: #667eea;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.month-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+}
+
+.month-table tr:last-child td {
+    border-bottom: none;
+}
+
+.month-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.month-table tr.current-month {
+    background-color: #d4edda !important;
+    font-weight: bold;
+}
+
+.month-table tr.current-month td {
+    color: #155724;
+}
+
+.month-table tr:hover {
+    background-color: #e7f3ff;
+    transition: background-color 0.2s;
+}
